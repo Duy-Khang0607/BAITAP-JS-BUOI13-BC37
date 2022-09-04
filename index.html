@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- BAI 1 :  -->
+      <div class="card form-group">
+        <div class="card-header">
+          <h2>Bài 1 : Tính tiền lương nhân viên</h2>
+          <h3>Lương 1 ngày : 100.000</h3>
+          <h3>Cho người dùng nhập vào số ngày làm</h3>
+        </div>
+        <div class="card-body">
+          <input type="text" id="soNgay" placeholder="Số ngày làm" />
+        </div>
+        <div class="card-footer">
+          <button onclick="btn1()" class="btn btn-danger" id="tinhTien">
+            Tính tiền
+          </button>
+          <div class="alert alert-danger" id="thanhTien" style="display: none">
+            0
+          </div>
+        </div>
+      </div>
+      <!-- BAI 2 : -->
+      <div class="card form-group">
+        <div class="card-header">
+          <h2>Bài 2 : Tính giá trị trung bình</h2>
+          <h3>Cho người dùng nhập vào 5 số và xuất ra màn hình</h3>
+        </div>
+        <div class="card-body row">
+          <div class="col">
+            <input type="text" id="nhapSo1" placeholder="Nhập vào 5 số" />
+            <input type="text" id="nhapSo2" placeholder="Nhập vào 5 số" />
+            <input type="text" id="nhapSo3" placeholder="Nhập vào 5 số" />
+            <input type="text" id="nhapSo4" placeholder="Nhập vào 5 số" />
+            <input type="text" id="nhapSo5" placeholder="Nhập vào 5 số" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button onclick="btn2()" class="btn btn-danger" id="tinhTien2">
+            Tính
+          </button>
+          <div class="alert alert-danger" id="thanhTien2" style="display: none">
+            0
+          </div>
+        </div>
+      </div>
+      <!-- BAI 3 :  -->
+      <div class="card form-group">
+        <div class="card-header">
+          <h2>Bài 3 : Quy đổi tiền</h2>
+          <h3>Giá USD : 23.500VND</h3>
+          <h3>Cho người dùng nhập vào số tiền USD</h3>
+          <h3>Tính và in ra số tiền quy đổi về VND</h3>
+        </div>
+        <div class="card-body">
+          <input type="text" id="nhapUSD" placeholder="USD" />
+        </div>
+        <div class="card-footer">
+          <button onclick="btn3()" class="btn btn-primary" id="tinhTien3">
+            Tính tiền
+          </button>
+          <div
+            class="alert alert-primary"
+            id="thanhTien3"
+            style="display: none"
+          >
+            0
+          </div>
+        </div>
+      </div>
+      <!-- BAI 4 :  -->
+      <div class="card form-group">
+        <div class="card-header">
+          <h2>Bài 4 : Tính diện tích , chu vi hcn</h2>
+          <h3>Tính và xuất ra diện tích, chu vi hcn đó</h3>
+        </div>
+        <div class="card-body row">
+          <div class="col">
+            <input type="text" id="chieuDai" placeholder="Chiều dài (m)" />
+            <input type="text" id="chieuRong" placeholder="Chiều rộng (m)" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button onclick="btn4()" class="btn btn-warning" id="tinhTien4">
+            Tính
+          </button>
+          <div
+            class="alert alert-warning"
+            id="thanhTien4"
+            style="display: none"
+          >
+            0
+          </div>
+        </div>
+      </div>
+      <!-- BAI 5 :  -->
+      <div class="card form-group">
+        <div class="card-header">
+          <h2>Bài 5 : TTính tổng 2 ký số</h2>
+          <h3>
+            Viết chương trình nhập vào 1 số có 2 chữ số (VD:12,=>tổng = 3)
+          </h3>
+        </div>
+        <div class="card-body row">
+          <div class="col">
+            <input type="text" id="so1" />
+            <input type="text" id="so2" />
+          </div>
+        </div>
+        <div class="card-footer">
+          <button onclick="btn5()" class="btn btn-success" id="tinhTien5">
+            Tính
+          </button>
+          <div
+            class="alert alert-success"
+            id="thanhTien5"
+            style="display: none"
+          >
+            0
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/index.js"></script>
+  </body>
+</html>
